@@ -18,12 +18,6 @@ namespace CodeBase.Hero
             _inputService = Game.InputService;
         }
 
-        private void Start()
-        {
-            _camera = Camera.main;
-            CameraFollow();
-        }
-
         private void Update()
         {
             Vector3 movementVector = Vector3.zero;
@@ -31,7 +25,7 @@ namespace CodeBase.Hero
             if (_inputService.Axis.sqrMagnitude > Constants.Epsilon)
             {
                 //Трансформируем экранныые координаты вектора в мировые
-                movementVector = _camera.transform.TransformDirection(_inputService.Axis);
+                movementVector = Camera.main.transform.TransformDirection(_inputService.Axis);
                 movementVector.y = 0;
                 movementVector.Normalize();
 
@@ -43,6 +37,6 @@ namespace CodeBase.Hero
             CharacterController.Move(MovementSpeed * movementVector * Time.deltaTime);
         }
 
-        private void CameraFollow() => _camera.GetComponent<CameraFollow>().Follow(gameObject);
+        
     }
 }
