@@ -1,6 +1,7 @@
 ﻿using System;
 using CodeBase.CameraLogic;
 using CodeBase.Infrastructure;
+using CodeBase.Infrastructure.Services;
 using CodeBase.Services.Input;
 using UnityEngine;
 
@@ -8,14 +9,18 @@ namespace CodeBase.Hero
 {
     public class HeroMove : MonoBehaviour
     {
-        public CharacterController CharacterController;
         public float MovementSpeed = 4.0f;
+        
+        private CharacterController CharacterController;
+        private HeroAnimator HeroAnimator;
         private IInputService _inputService;
-        private Camera _camera;
 
         private void Awake()
         {
-            _inputService = Game.InputService;
+            _inputService = AllServices.Container.Single<IInputService>();
+            
+            CharacterController = GetComponent<CharacterController>();
+            HeroAnimator = GetComponent<HeroAnimator>();
         }
 
         private void Update()
@@ -24,7 +29,6 @@ namespace CodeBase.Hero
 
             if (_inputService.Axis.sqrMagnitude > Constants.Epsilon)
             {
-                //Трансформируем экранныые координаты вектора в мировые
                 movementVector = Camera.main.transform.TransformDirection(_inputService.Axis);
                 movementVector.y = 0;
                 movementVector.Normalize();
