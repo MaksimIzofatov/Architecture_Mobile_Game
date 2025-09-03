@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using CodeBase.Infrastructure.AssetManagement;
+using CodeBase.Infrastructure.Services.PersistentProgress;
 using UnityEngine;
 
 namespace CodeBase.Infrastructure.Factory
@@ -6,19 +8,56 @@ namespace CodeBase.Infrastructure.Factory
     public class GameFactory : IGameFactory
     {
         private readonly IAssets _assets;
+
+        public List<ISavedProgressReader> ProgressReaders { get; } = new();
+        public List<ISavedProgress> ProgressWriters { get; } = new();
         
         public GameFactory(IAssets assets)
         {
             _assets = assets;
         }
-        public GameObject CreateHero(GameObject at)
+        public GameObject CreateHero(GameObject at) => 
+            InstantiateRegistered(AssetPath.HeroPath, at.transform.position);
+
+        public void CreateHud() => 
+            InstantiateRegistered(AssetPath.HudPath);
+
+        public void Cleanup()
         {
-            return _assets.Instantiate(AssetPath.HeroPath, at.transform.position);
+            ProgressReaders.Clear();
+            ProgressWriters.Clear();
         }
 
-        public void CreateHud()
+        private GameObject InstantiateRegistered(string prefabPath, Vector3 position)
         {
-            _assets.Instantiate(AssetPath.HudPath);
+            var gameObject = _assets.Instantiate(prefabPath, position);
+            RegisterProgressWatchers(gameObject);
+            return gameObject;
+        } 
+        
+        private GameObject InstantiateRegistered(string prefabPath)
+        {
+            var gameObject = _assets.Instantiate(prefabPath);
+            RegisterProgressWatchers(gameObject);
+            return gameObject;
+        }
+
+        private void RegisterProgressWatchers(GameObject hero)
+        {
+            foreach (ISavedProgressReader progressReader in hero.GetComponentsInChildren<ISavedProgressReader>())
+            {
+                Register(progressReader);
+            }
+        }
+
+        private void Register(ISavedProgressReader progressReader)
+        {
+            if (progressReader is ISavedProgress savedProgress)
+            {
+                ProgressWriters.Add(savedProgress);
+            }
+            
+            ProgressReaders.Add(progressReader);
         }
     }
 }

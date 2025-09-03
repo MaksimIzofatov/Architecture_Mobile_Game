@@ -7,5 +7,10 @@ namespace CodeBase.Data
     public class WorldData
     {
         public PositionOnLevel PositionOnLevel { get; set; }
+
+        public WorldData(string levelName)
+        {
+            PositionOnLevel = new PositionOnLevel(levelName);
+        }
     }
 }
