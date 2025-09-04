@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using CodeBase.Infrastructure.Services;
 using CodeBase.Infrastructure.Services.PersistentProgress;
@@ -8,6 +9,8 @@ namespace CodeBase.Infrastructure.Factory
     public interface IGameFactory : IService
     {
         GameObject CreateHero(GameObject at);
+        GameObject HeroGameObject { get; }
+        public event Action HeroCreated;
         void CreateHud();
         List<ISavedProgressReader> ProgressReaders { get; }
         List<ISavedProgress> ProgressWriters { get; }

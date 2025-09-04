@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using CodeBase.Infrastructure.AssetManagement;
 using CodeBase.Infrastructure.Services.PersistentProgress;
@@ -12,12 +13,20 @@ namespace CodeBase.Infrastructure.Factory
         public List<ISavedProgressReader> ProgressReaders { get; } = new();
         public List<ISavedProgress> ProgressWriters { get; } = new();
         
+        public GameObject HeroGameObject { get; set; }
+        public event Action HeroCreated;
+        
         public GameFactory(IAssets assets)
         {
             _assets = assets;
         }
-        public GameObject CreateHero(GameObject at) => 
-            InstantiateRegistered(AssetPath.HeroPath, at.transform.position);
+        public GameObject CreateHero(GameObject at)
+        {
+            HeroGameObject = InstantiateRegistered(AssetPath.HeroPath, at.transform.position);
+            HeroCreated?.Invoke();
+            return HeroGameObject;
+        }
+
 
         public void CreateHud() => 
             InstantiateRegistered(AssetPath.HudPath);
