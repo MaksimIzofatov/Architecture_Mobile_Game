@@ -5,7 +5,7 @@ namespace CodeBase.Data
     [Serializable]
     public class PlayerProgress
     {
-        public WorldData WorldData { get; set; }
+        public WorldData WorldData;
 
         public PlayerProgress(string levelName)
         {

@@ -46,14 +46,14 @@ namespace CodeBase.Hero
         }
 
 
-        public void LoadProgress(PlayerProgress progress)
+        public void UpdateProgress(PlayerProgress progress)
         {
             progress.WorldData.PositionOnLevel = new PositionOnLevel(CurrentLevel(), transform.position.AsVectorData());
         }
 
-        public void UpdateProgress(PlayerProgress progress)
+        public void LoadProgress(PlayerProgress progress)
         {
-            if (progress.WorldData.PositionOnLevel.Level == CurrentLevel())
+            if (CurrentLevel() == progress.WorldData.PositionOnLevel.Level)
             {
                 var savedPosition = progress.WorldData.PositionOnLevel.Position;
                 if (savedPosition != null)
@@ -64,7 +64,7 @@ namespace CodeBase.Hero
         private void Warp(Vector3Data to)
         {
             _characterController.enabled = false;
-            transform.position = to.AsUnityVector3();
+            transform.position = to.AsUnityVector3().AddY(_characterController.height);
             _characterController.enabled = true;
         }
 
