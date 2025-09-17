@@ -36,6 +36,14 @@ namespace CodeBase.Infrastructure.States
             _persistentProgressService.PlayerProgress = _saveLoadService.LoadProgress() ?? NewProgress();
         }
 
-        private PlayerProgress NewProgress() => new("Main");
+        private PlayerProgress NewProgress()
+        {
+            PlayerProgress playerProgress = new PlayerProgress("Main");
+
+            playerProgress.HeroState.MaxHealth = 50;
+            playerProgress.HeroState.ResetHealth();
+            
+            return playerProgress;
+        }
     }
 }
