@@ -9,23 +9,24 @@ namespace CodeBase.Hero
         public HeroHealth Health;
         public HeroMove Move;
         public HeroAnimator Animator;
+        public HeroAttack Attack;
         
         public GameObject DeathEffect;
         private bool _isDead;
 
         private void Start()
         {
-            Health.HeathChanged += HealthChanged;
+            Health.HealthChanged += HealthChanged;
         }
 
         private void OnDestroy()
         {
-            Health.HeathChanged -= HealthChanged;
+            Health.HealthChanged -= HealthChanged;
         }
 
         private void HealthChanged()
         {
-            if (!_isDead && Health.Current <= 0)
+            if (!_isDead && Health.CurrentHealth <= 0)
             {
                 Die();
             }
@@ -35,6 +36,7 @@ namespace CodeBase.Hero
         {
             _isDead = true;
             Move.enabled = false;
+            Attack.enabled = false;
             Animator.PlayDeath();
 
             Instantiate(DeathEffect, transform.position, Quaternion.identity);

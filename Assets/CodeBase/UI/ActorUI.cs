@@ -1,6 +1,7 @@
 using System;
 using System.Reflection.Emit;
 using CodeBase.Hero;
+using CodeBase.Logic;
 using UnityEngine;
 
 namespace CodeBase.UI
@@ -9,21 +10,29 @@ namespace CodeBase.UI
     {
         public HPBar HpBar;
         
-        private HeroHealth _heroHealth;
+        private IHealth _health;
+
+        private void Start()
+        {
+            IHealth _health = GetComponent<IHealth>();
+            
+            if (_health != null)
+                Constructor(_health);
+        }
 
         private void OnDestroy() => 
-            _heroHealth.HeathChanged -= UpdateHpBar;
+            _health.HealthChanged -= UpdateHpBar;
 
-        public void Constructor(HeroHealth heroHealth)
+        public void Constructor(IHealth heroHealth)
         {
-            _heroHealth = heroHealth;
+            _health = heroHealth;
 
-            _heroHealth.HeathChanged += UpdateHpBar;
+            _health.HealthChanged += UpdateHpBar;
         }
 
         private void UpdateHpBar()
         {
-            HpBar.SetValue(_heroHealth.Current, _heroHealth.Max);
+            HpBar.SetValue(_health.CurrentHealth, _health.MaxHealth);
         }
     }
 }
