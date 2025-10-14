@@ -1,4 +1,3 @@
-using System;
 using CodeBase.CameraLogic;
 using CodeBase.Hero;
 using CodeBase.Infrastructure.Factory;
@@ -9,16 +8,17 @@ using UnityEngine;
 
 namespace CodeBase.Infrastructure.States
 {
-    public class LoadLevelState : IPayloadedState<string>
+    public class LoadSceneState : IPayloadedState<string>
     {
         private const string InitialPointTag = "InitialPoint";
+        private const string EnemySpawnerTag = "EnemySpawner";
         private readonly GameStateMachine _gameStateMachine;
         private readonly SceneLoader _sceneLoader;
         private readonly LoadingCurtain _curtain;
         private readonly IGameFactory _gameFactory;
         private readonly IPersistentProgressService _progressService;
 
-        public LoadLevelState(GameStateMachine gameStateMachine, SceneLoader sceneLoader, LoadingCurtain curtain, IGameFactory gameFactory, IPersistentProgressService progressService)
+        public LoadSceneState(GameStateMachine gameStateMachine, SceneLoader sceneLoader, LoadingCurtain curtain, IGameFactory gameFactory, IPersistentProgressService progressService)
         {
             _gameStateMachine = gameStateMachine;
             _sceneLoader = sceneLoader;
@@ -59,11 +59,22 @@ namespace CodeBase.Infrastructure.States
 
         private void InitGameWorld()
         {
+            InitSpawners();
+            
             GameObject hero = InitHero();
 
             InitHud(hero);
             
             CameraFollow(hero);
+        }
+
+        private void InitSpawners()
+        {
+            foreach (GameObject spawnerObject in GameObject.FindGameObjectsWithTag(EnemySpawnerTag))
+            {
+                var spawner = spawnerObject.GetComponent<EnemySpawner>();
+                _gameFactory.Register(spawner);
+            }
         }
 
         private GameObject InitHero()

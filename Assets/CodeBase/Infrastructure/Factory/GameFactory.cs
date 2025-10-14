@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using CodeBase.Infrastructure.AssetManagement;
 using CodeBase.Infrastructure.Services.PersistentProgress;
+using CodeBase.Logic;
 using UnityEngine;
 
 namespace CodeBase.Infrastructure.Factory
@@ -59,7 +60,7 @@ namespace CodeBase.Infrastructure.Factory
             }
         }
 
-        private void Register(ISavedProgressReader progressReader)
+        public void Register(ISavedProgressReader progressReader)
         {
             if (progressReader is ISavedProgress savedProgress)
             {

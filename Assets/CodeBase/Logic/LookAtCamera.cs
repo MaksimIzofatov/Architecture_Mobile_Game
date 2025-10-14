@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace CodeBase.UI
+namespace CodeBase.Logic
 {
     public class LookAtCamera : MonoBehaviour
     {
