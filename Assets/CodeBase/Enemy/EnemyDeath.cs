@@ -24,6 +24,7 @@ namespace CodeBase.Enemy
         {
             if (Health.CurrentHealth <= 0)
             {
+                
                 Die();
             }
         }
