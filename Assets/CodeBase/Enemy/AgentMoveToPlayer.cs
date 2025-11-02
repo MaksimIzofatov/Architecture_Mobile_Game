@@ -1,18 +1,24 @@
-using System;
-using CodeBase.Hero;
+using CodeBase.Infrastructure.Factory;
 using UnityEngine;
 using UnityEngine.AI;
 
 namespace CodeBase.Enemy
 {
-    public class AgentMoveToPlayer : MonoBehaviour
+    public class AgentMoveToPlayer : Follow
     {
         public NavMeshAgent Agent;
+
         private Transform _heroTransform;
 
-        private void Update()
+        public void Constructor(Transform heroTransform) => 
+            _heroTransform = heroTransform;
+
+        private void Update() => 
+            SetDestinationForAgent();
+
+        private void SetDestinationForAgent()
         {
-            if(Vector3.Distance(Agent.destination, transform.position) > 0.1f)
+            if(_heroTransform)
                 Agent.destination = _heroTransform.position;
         }
     }

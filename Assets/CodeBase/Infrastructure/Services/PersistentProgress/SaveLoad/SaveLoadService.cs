@@ -29,9 +29,8 @@ namespace CodeBase.Infrastructure.Services.PersistentProgress.SaveLoad
 
         public PlayerProgress LoadProgress()
         {
-            var str = PlayerPrefs.GetString(ProgressKey);
-            var p =str.ToDeserialized<PlayerProgress>();
-            return p;
+            return PlayerPrefs.GetString(ProgressKey)?
+                        .ToDeserialized<PlayerProgress>();
         }
     }
 }

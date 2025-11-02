@@ -23,7 +23,7 @@ namespace CodeBase.Infrastructure.States
         {
             LoadProgressOrInitNew();
             
-            _gameStateMachine.Enter<LoadLevelState, string>(_persistentProgressService.PlayerProgress.WorldData.PositionOnLevel.Level);
+            _gameStateMachine.Enter<LoadSceneState, string>(_persistentProgressService.PlayerProgress.WorldData.PositionOnLevel.Level);
         }
 
         public void Exit()
@@ -36,6 +36,16 @@ namespace CodeBase.Infrastructure.States
             _persistentProgressService.PlayerProgress = _saveLoadService.LoadProgress() ?? NewProgress();
         }
 
-        private PlayerProgress NewProgress() => new("Main");
+        private PlayerProgress NewProgress()
+        {
+            PlayerProgress playerProgress = new PlayerProgress("Main");
+
+            playerProgress.HeroState.MaxHealth = 50;
+            playerProgress.HeroStats.Damage = 1f;
+            playerProgress.HeroStats.DamageRadius = 0.5f;
+            playerProgress.HeroState.ResetHealth();
+            
+            return playerProgress;
+        }
     }
 }
