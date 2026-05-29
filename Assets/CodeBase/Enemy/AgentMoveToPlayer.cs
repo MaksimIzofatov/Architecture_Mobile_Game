@@ -19,7 +19,7 @@ namespace CodeBase.Enemy
         private void SetDestinationForAgent()
         {
             if(_heroTransform)
-                Agent.destination = _heroTransform.position;
+                Agent.destination = _heroTransform.position + new Vector3(0.5f, 0, 0.5f);
         }
     }
 }

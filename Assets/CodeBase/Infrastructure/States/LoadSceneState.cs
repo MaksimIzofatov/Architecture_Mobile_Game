@@ -1,10 +1,12 @@
 using CodeBase.CameraLogic;
 using CodeBase.Hero;
 using CodeBase.Infrastructure.Factory;
+using CodeBase.Infrastructure.Services;
 using CodeBase.Infrastructure.Services.PersistentProgress;
 using CodeBase.Logic;
 using CodeBase.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace CodeBase.Infrastructure.States
 {
@@ -17,14 +19,16 @@ namespace CodeBase.Infrastructure.States
         private readonly LoadingCurtain _curtain;
         private readonly IGameFactory _gameFactory;
         private readonly IPersistentProgressService _progressService;
+        private IStaticDataService _staticData;
 
-        public LoadSceneState(GameStateMachine gameStateMachine, SceneLoader sceneLoader, LoadingCurtain curtain, IGameFactory gameFactory, IPersistentProgressService progressService)
+        public LoadSceneState(GameStateMachine gameStateMachine, SceneLoader sceneLoader, LoadingCurtain curtain, IGameFactory gameFactory, IPersistentProgressService progressService, IStaticDataService staticData)
         {
             _gameStateMachine = gameStateMachine;
             _sceneLoader = sceneLoader;
             _curtain = curtain;
             _gameFactory = gameFactory;
             _progressService = progressService;
+            _staticData = staticData;
         }
 
         public void Enter(string sceneName)
@@ -70,11 +74,13 @@ namespace CodeBase.Infrastructure.States
 
         private void InitSpawners()
         {
-            foreach (GameObject spawnerObject in GameObject.FindGameObjectsWithTag(EnemySpawnerTag))
-            {
-                var spawner = spawnerObject.GetComponent<EnemySpawner>();
-                _gameFactory.Register(spawner);
-            }
+           string sceneKey = SceneManager.GetActiveScene().name;
+           LevelStaticData levelData = _staticData.ForLevel(sceneKey);
+
+           foreach (EnemySpawnerData enemySpawner in levelData.EnemySpawners)
+           {
+               _gameFactory.CreateSpawner(enemySpawner.Id, enemySpawner.Position, enemySpawner.MonsterTypeId);
+           }
         }
 
         private GameObject InitHero()
