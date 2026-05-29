@@ -38,6 +38,8 @@ namespace CodeBase.Enemy
             SpawnDeathFx();
             StartCoroutine(DestroyTimer());
             
+            GetComponent<AgentMoveToPlayer>().enabled = false;
+            
             Happened?.Invoke();
         }
 

@@ -1,0 +1,33 @@
+using System.Linq;
+using CodeBase.Infrastructure.Services;
+using CodeBase.Logic;
+using CodeBase.Logic.EnemySpawners;
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+namespace CodeBase.Editor
+{
+    [CustomEditor(typeof(LevelStaticData))]
+    public class LevelStaticDataEditor : UnityEditor.Editor
+    {
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+            
+            var levelStaticData = (LevelStaticData)target;
+
+            if (GUILayout.Button("Collect"))
+            {
+                levelStaticData.EnemySpawners = FindObjectsOfType<SpawnMarker>()
+                    .Select(x => new EnemySpawnerData(x.GetComponent<UniqueId>().Id,
+                                                                x.MonsterTypeId, x.transform.position))
+                    .ToList();
+                
+                levelStaticData.LevelKey = SceneManager.GetActiveScene().name;
+            }
+            
+            EditorUtility.SetDirty(target);
+        }
+    }
+}

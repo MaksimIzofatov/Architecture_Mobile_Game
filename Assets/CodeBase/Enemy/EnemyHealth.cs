@@ -21,7 +21,8 @@ namespace CodeBase.Enemy
             CurrentHealth -= damage;
             
             Animator.PlayHit();
-            
+            Animator.PlayAttack();
+            GetComponent<Attack>().DisableAttack();
             HealthChanged?.Invoke();
         }
     }
