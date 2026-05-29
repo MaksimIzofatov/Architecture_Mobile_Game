@@ -5,60 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f01b961d-29d9-4c17-bdbf-28649a85c6fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/LootData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/LootData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/LevelStaticDataEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/LevelStaticDataEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/EndlessRotation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/Loot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/Loot.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/LootPiece.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/LootPiece.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/LootSpawner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/LootSpawner.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/IRandomService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/IRandomService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/UnityRandomService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/UnityRandomService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/EnemySpawners.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/EnemySpawners/SpawnMarker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/EnemySpawners/SpawnMarker.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/EnemySpawnerData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/EnemySpawnerData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/LevelStaticData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/LevelStaticData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/LootCounter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/LootCounter.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Data/WorldData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/WorldData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Editor/EnemySpawnerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/SpawnMarkerEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Editor/EnemySpawnerEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/SpawnMarkerEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/AgentMoveToPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/AgentMoveToPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/EnemyDeath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/EnemyDeath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/EnemyHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/TriggerObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/TriggerObserver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/AssetManagement/AssetPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/AssetManagement/AssetPath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Factory/GameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Factory/GameFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Factory/IGameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Factory/IGameFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/IStaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/IStaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/GameStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/GameStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadSceneState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadSceneState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Logic/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/EnemySpawners/SpawnPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Logic/EnemySpawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/EnemySpawners/SpawnPoint.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/StaticData/MonsterStaticData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/MonsterStaticData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/StaticData/StaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/StaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemies/EnemySpawner.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemies/EnemySpawner.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemies/Golem/Animations/FreeGolem.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Enemies/Golem/Animations/FreeGolem.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemies/Golem/Animations/attack01.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Enemies/Golem/Animations/attack01.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemies/Lich/Prefabs/BaseEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Enemies/Lich/Prefabs/BaseEnemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Hud/Hud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Hud/Hud.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/StaticData/Monsters/Golem.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/StaticData/Monsters/Golem.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/StaticData/Monsters/Lich.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/StaticData/Monsters/Lich.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Enemy" />
+        <entry key="$PROJECT_DIR$" value="Loot" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -106,8 +53,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Data/PlayerProgress.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Data/Stats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Editor.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Editor/EnemySpawnerEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Editor/SpawnMarkerEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Editor/UniqueIdEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/!Projects/K-Syndicate StudyGame/Game/Assets/CodeBase/Enemy/AgentMoveToPlayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Enemy/AgentMoveToPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Enemy/Aggro.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Enemy/AnimateAlongAgent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -135,7 +83,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/GameStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadProgressState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Logic/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Logic/EnemySpawners/SpawnPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Logic/IHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Logic/LookAtCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Logic/UniqueId.cs" root0="FORCE_HIGHLIGHTING" />
@@ -144,12 +92,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/HPBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/LootCounter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Enemies/EnemySpawner.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Enemies/Lich/Prefabs/BaseEnemy.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Infrastucture/GameBootstrapper.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Infrastucture/GameBootstrapper.prefab.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Load/Curtain.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Load/Curtain.prefab.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Loot/CFX3_MagicAura_D_Runic.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Main/NavMesh.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
@@ -163,21 +111,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Loot&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.C#&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "UI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.C#",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Unity\UnityHub\Unity Hub\Hub\2022.3.57f1\Editor\Unity.exe" />
@@ -273,7 +221,7 @@
       <workItem from="1762113043801" duration="3482000" />
       <workItem from="1762444059630" duration="10268000" />
       <workItem from="1763484135039" duration="2828000" />
-      <workItem from="1780080022294" duration="2649000" />
+      <workItem from="1780080022294" duration="3733000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -419,7 +367,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762116030177</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="edit spawn points, add staticdata editor for level static data">
+      <option name="closed" value="true" />
+      <created>1780083496986</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1780083496986</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +409,8 @@
     <MESSAGE value="create base enemy, death enemy and ui for hp" />
     <MESSAGE value="add enemy spawners" />
     <MESSAGE value="add unique enemy spawner, add easy add new type enemy , add static data for enemy" />
-    <option name="LAST_COMMIT_MESSAGE" value="add unique enemy spawner, add easy add new type enemy , add static data for enemy" />
+    <MESSAGE value="edit spawn points, add staticdata editor for level static data" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit spawn points, add staticdata editor for level static data" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

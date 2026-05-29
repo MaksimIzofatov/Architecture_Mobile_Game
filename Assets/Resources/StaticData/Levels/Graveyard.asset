@@ -15,19 +15,19 @@ MonoBehaviour:
   LevelKey: Main
   EnemySpawners:
   - Id: Main_525c32b6-d93b-465d-bd55-4e514f5eca64
-    MonsterTypeId: 0
+    MonsterTypeId: 10
     Position: {x: -10, y: 0, z: 14.29}
   - Id: Main_2362a855-dca7-47b0-a127-a1bc5fdabbe3
     MonsterTypeId: 0
     Position: {x: 11.13, y: 0, z: 5.29}
   - Id: Main_e7fbd857-914f-4f2e-bc52-fe0c0af4b307
-    MonsterTypeId: 0
+    MonsterTypeId: 10
     Position: {x: 12.4, y: 0, z: -4.01}
   - Id: Main_9a005b87-e85b-43b6-b6da-c9f6ad53e9ee
     MonsterTypeId: 0
     Position: {x: -15.3, y: 0.97, z: -1.21}
   - Id: Main_cfd8585d-bc87-4617-90a7-f21ab3db2014
-    MonsterTypeId: 0
+    MonsterTypeId: 10
     Position: {x: -14.54, y: 0.48, z: -14.68}
   - Id: Main_e2f28e89-8f1d-4825-a542-0bd0a7b19a62
     MonsterTypeId: 0
