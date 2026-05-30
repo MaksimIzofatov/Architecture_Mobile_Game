@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f01b961d-29d9-4c17-bdbf-28649a85c6fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Simple Fantasy GUI/PNG/Character Bar/Player_Frame.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Simple Fantasy GUI/PNG/Character Bar/Player_Frame.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Simple Fantasy GUI/PNG/Character Panel/Red_Ribbon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Simple Fantasy GUI/PNG/Character Panel/Red_Ribbon.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Simple Fantasy GUI/PNG/Inventory/Inventory_Slot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Simple Fantasy GUI/PNG/Inventory/Inventory_Slot.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Simple Fantasy GUI/PNG/Menu Panel/Button.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Simple Fantasy GUI/PNG/Menu Panel/Button.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Simple Fantasy GUI/PNG/Menu Panel/ButtonShadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Simple Fantasy GUI/PNG/Menu Panel/ButtonShadow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Window.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Window.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,21 +120,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "UI",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;UI&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Unity\UnityHub\Unity Hub\Hub\2022.3.57f1\Editor\Unity.exe" />
@@ -223,7 +230,8 @@
       <workItem from="1762113043801" duration="3482000" />
       <workItem from="1762444059630" duration="10268000" />
       <workItem from="1763484135039" duration="2828000" />
-      <workItem from="1780080022294" duration="4352000" />
+      <workItem from="1780080022294" duration="4803000" />
+      <workItem from="1780141136770" duration="611000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -385,7 +393,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780085665243</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add content ui">
+      <option name="closed" value="true" />
+      <created>1780086422550</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1780086422550</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,7 +437,8 @@
     <MESSAGE value="add unique enemy spawner, add easy add new type enemy , add static data for enemy" />
     <MESSAGE value="edit spawn points, add staticdata editor for level static data" />
     <MESSAGE value="add files ui, create base window ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="add files ui, create base window ui" />
+    <MESSAGE value="add content ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="add content ui" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
