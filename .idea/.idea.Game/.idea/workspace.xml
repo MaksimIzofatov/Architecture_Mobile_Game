@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f01b961d-29d9-4c17-bdbf-28649a85c6fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Elements.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/ShopWindow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/ShopWindow.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/WindowBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/WindowBase.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Simple Fantasy GUI/PNG/Inventory/Money_Bar.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Simple Fantasy GUI/PNG/Inventory/Money_Bar.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/ShopItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/ShopItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Window.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Window.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Factory/GameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Factory/GameFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadSceneState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadSceneState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Elements/ActorUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Elements/ActorUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/HPBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Elements/HPBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/HPBar.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Elements/HPBar.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/LootCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Elements/LootCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/LootCounter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Elements/LootCounter.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,9 +100,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Logic/UniqueId.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/StaticData/MonsterStaticData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/StaticData/StaticDataService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/HPBar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/LootCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/Elements.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/Elements/ActorUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/Elements/HPBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/Elements/LootCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/WindowBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Simple Fantasy GUI/PNG/Menu Panel/Button.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Enemies/Lich/Prefabs/BaseEnemy.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Infrastucture/GameBootstrapper.prefab" root0="FORCE_HIGHLIGHTING" />
@@ -106,6 +113,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Load/Curtain.prefab.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Loot/CFX3_MagicAura_D_Runic.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/StaticData/Levels/Graveyard.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/UI/Shop.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/UI/ShopItem.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Main/NavMesh.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -232,7 +240,7 @@
       <workItem from="1763484135039" duration="2828000" />
       <workItem from="1780080022294" duration="4803000" />
       <workItem from="1780141136770" duration="758000" />
-      <workItem from="1780227175401" duration="629000" />
+      <workItem from="1780227175401" duration="1499000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -410,7 +418,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780144768023</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="end create ui view">
+      <option name="closed" value="true" />
+      <created>1780227990020</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1780227990020</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,7 +464,8 @@
     <MESSAGE value="add files ui, create base window ui" />
     <MESSAGE value="add content ui" />
     <MESSAGE value="add ads item, add shop items in scroll view" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ads item, add shop items in scroll view" />
+    <MESSAGE value="end create ui view" />
+    <option name="LAST_COMMIT_MESSAGE" value="end create ui view" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
