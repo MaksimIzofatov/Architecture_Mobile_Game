@@ -7,6 +7,8 @@ using CodeBase.Infrastructure.Services.PersistentProgress;
 using CodeBase.Infrastructure.Services.PersistentProgress.SaveLoad;
 using CodeBase.Services.Input;
 using CodeBase.StaticData;
+using CodeBase.UI.Services.Factory;
+using CodeBase.UI.Services.Windows;
 using UnityEngine;
 
 namespace CodeBase.Infrastructure.States
@@ -44,16 +46,22 @@ namespace CodeBase.Infrastructure.States
         private void RegisterServices()
         {
             RegisterStaticData();
-            IRandomService randomService = new UnityRandomService();
-            IPersistentProgressService progressService = new PersistentProgressService();
-            
-            _services.RegisterSingle(randomService);
-            _services.RegisterSingle(progressService);
-            _services.RegisterSingle<IInputService>(InputService());
-            _services.RegisterSingle<IAssets>(new AssetsProvider());
-            _services.RegisterSingle<IGameFactory>(new GameFactory(_services.Single<IAssets>(), _services.Single<IStaticDataService>(), randomService, progressService));
-            _services.RegisterSingle<ISaveLoadService>(new  SaveLoadService(progressService, _services.Single<IGameFactory>()));
 
+            _services.RegisterSingle<IAssets>(new AssetsProvider());
+            _services.RegisterSingle<IInputService>(InputService());
+            _services.RegisterSingle<IRandomService>(new UnityRandomService());
+            _services.RegisterSingle<IPersistentProgressService>(new PersistentProgressService());
+            
+            _services.RegisterSingle<IGameFactory>(new GameFactory( 
+                _services.Single<IAssets>(), 
+                _services.Single<IStaticDataService>(),
+                _services.Single<IRandomService>(), 
+                   _services.Single<IPersistentProgressService>()));
+            
+            _services.RegisterSingle<ISaveLoadService>(new  SaveLoadService(_services.Single<IPersistentProgressService>(), _services.Single<IGameFactory>()));
+
+            _services.RegisterSingle<IUIFactory>(new UIFactory(_services.Single<IAssets>(), _services.Single<IStaticDataService>()));
+            _services.RegisterSingle<IWindowService>(new WindowService(_services.Single<IUIFactory>()));
         }
 
         private void RegisterStaticData()

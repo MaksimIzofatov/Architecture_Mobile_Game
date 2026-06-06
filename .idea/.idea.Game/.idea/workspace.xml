@@ -5,19 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f01b961d-29d9-4c17-bdbf-28649a85c6fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/ShopWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/ShopWindow.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/WindowBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/WindowBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/Windows.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/Windows/WindowConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/Windows/WindowConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/Windows/WindowStaticData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/Windows/WindowStaticData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Services.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Factory.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Factory/IUIFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Factory/IUIFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Factory/UIFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Factory/UIFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Windows.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Windows/IWindowService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Windows/IWindowService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Windows/WindowId.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Windows/WindowId.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Windows/WindowService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Windows/WindowService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Windows.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Factory/GameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Factory/GameFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Editor/LevelStaticDataEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/LevelStaticDataEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/IStaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/IStaticDataService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadSceneState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadSceneState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Elements/ActorUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Elements/ActorUI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/HPBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Elements/HPBar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/HPBar.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Elements/HPBar.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/LootCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Elements/LootCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/LootCounter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Elements/LootCounter.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/StaticData/EnemySpawnerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/EnemySpawnerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/StaticData/LevelStaticData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/LevelStaticData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/StaticData/StaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/StaticData/StaticDataService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/ShopWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Windows/ShopWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/ShopWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Windows/ShopWindow.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/WindowBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Windows/WindowBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/WindowBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Windows/WindowBase.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,11 +118,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Logic/UniqueId.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/StaticData/MonsterStaticData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/StaticData/StaticDataService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/StaticData/Windows/WindowStaticData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/Elements.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/Elements/ActorUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/Elements/HPBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/Elements/LootCounter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/WindowBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/Services/Windows/WindowService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/Windows/WindowBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Simple Fantasy GUI/PNG/Menu Panel/Button.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Enemies/Lich/Prefabs/BaseEnemy.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Infrastucture/GameBootstrapper.prefab" root0="FORCE_HIGHLIGHTING" />
@@ -240,7 +260,8 @@
       <workItem from="1763484135039" duration="2828000" />
       <workItem from="1780080022294" duration="4803000" />
       <workItem from="1780141136770" duration="758000" />
-      <workItem from="1780227175401" duration="1499000" />
+      <workItem from="1780227175401" duration="1700000" />
+      <workItem from="1780772549714" duration="3889000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -426,7 +447,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780227990020</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="create shop window and add logic in close button">
+      <option name="closed" value="true" />
+      <created>1780228998026</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1780228998026</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,7 +494,8 @@
     <MESSAGE value="add content ui" />
     <MESSAGE value="add ads item, add shop items in scroll view" />
     <MESSAGE value="end create ui view" />
-    <option name="LAST_COMMIT_MESSAGE" value="end create ui view" />
+    <MESSAGE value="create shop window and add logic in close button" />
+    <option name="LAST_COMMIT_MESSAGE" value="create shop window and add logic in close button" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
