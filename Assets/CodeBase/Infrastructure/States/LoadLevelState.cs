@@ -7,12 +7,13 @@ using CodeBase.Logic;
 using CodeBase.StaticData;
 using CodeBase.UI;
 using CodeBase.UI.Elements;
+using CodeBase.UI.Services.Factory;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace CodeBase.Infrastructure.States
 {
-    public class LoadSceneState : IPayloadedState<string>
+    public class LoadLevelState : IPayloadedState<string>
     {
         private const string InitialPointTag = "InitialPoint";
         private const string EnemySpawnerTag = "EnemySpawner";
@@ -22,8 +23,9 @@ namespace CodeBase.Infrastructure.States
         private readonly IGameFactory _gameFactory;
         private readonly IPersistentProgressService _progressService;
         private IStaticDataService _staticData;
+        private readonly IUIFactory _uiFactory;
 
-        public LoadSceneState(GameStateMachine gameStateMachine, SceneLoader sceneLoader, LoadingCurtain curtain, IGameFactory gameFactory, IPersistentProgressService progressService, IStaticDataService staticData)
+        public LoadLevelState(GameStateMachine gameStateMachine, SceneLoader sceneLoader, LoadingCurtain curtain, IGameFactory gameFactory, IPersistentProgressService progressService, IStaticDataService staticData, IUIFactory uiFactory)
         {
             _gameStateMachine = gameStateMachine;
             _sceneLoader = sceneLoader;
@@ -31,6 +33,7 @@ namespace CodeBase.Infrastructure.States
             _gameFactory = gameFactory;
             _progressService = progressService;
             _staticData = staticData;
+            _uiFactory = uiFactory;
         }
 
         public void Enter(string sceneName)
@@ -49,11 +52,14 @@ namespace CodeBase.Infrastructure.States
 
         private void OnLoaded()
         {
+            InitUIRoot();
             InitGameWorld();
             InformProgressReaders();
 
             _gameStateMachine.Enter<GameLoopState>();
         }
+
+        private void InitUIRoot() => _uiFactory.CreateUIRoot();
 
         private void InformProgressReaders()
         {

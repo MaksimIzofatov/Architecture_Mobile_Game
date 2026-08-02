@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 1809767585207811422}
   - component: {fileID: 8234758006448568142}
   - component: {fileID: 1551254998470637913}
+  - component: {fileID: 5885045209163297619}
   m_Layer: 0
   m_Name: Shop_button
   m_TagString: Untagged
@@ -255,3 +256,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5885045209163297619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4287353172848264271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fab92febf5574818a9bdaf14a2fcee3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: {fileID: 1551254998470637913}
+  WindowId: 1

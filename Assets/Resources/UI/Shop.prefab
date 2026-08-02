@@ -816,6 +816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CloseButton: {fileID: 3680099978518945559}
+  SkullText: {fileID: 1583536128311605905}
 --- !u!1 &3946956885976619802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,11 +1238,11 @@ RectTransform:
   - {fileID: 6926288975057394734}
   m_Father: {fileID: 6721137892757099120}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.9}
+  m_AnchorMin: {x: 1, y: 0.9}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_SizeDelta: {x: 1500, y: 0}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &8537742522134658875
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f01b961d-29d9-4c17-bdbf-28649a85c6fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Elements/OpenWindowButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Elements/OpenWindowButton.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Factory/GameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Factory/GameFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Hud/Hud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Hud/Hud.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/StaticData/UI/WindowStaticData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/StaticData/UI/WindowStaticData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/GameStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/GameStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadProgressState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadProgressState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadSceneState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadLevelState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadSceneState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadLevelState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Factory/UIFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Factory/UIFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/Windows/ShopWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Windows/ShopWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/Windows/WindowBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Windows/WindowBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Hud/Shop_button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Hud/Shop_button.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Shop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Shop.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +91,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Services/IRandomService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/!Projects/K-Syndicate StudyGame/Game/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/!Projects/K-Syndicate StudyGame/Game/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/GameStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadProgressState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Logic/EnemySpawners/SpawnPoint.cs" root0="FORCE_HIGHLIGHTING" />
@@ -105,6 +110,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/UI/Windows/WindowBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Simple Fantasy GUI/PNG/Menu Panel/Button.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Enemies/Lich/Prefabs/BaseEnemy.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Hud/Shop_button.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Infrastucture/GameBootstrapper.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Infrastucture/GameBootstrapper.prefab.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Load/Curtain.prefab" root0="FORCE_HIGHLIGHTING" />
@@ -240,7 +246,8 @@
       <workItem from="1780080022294" duration="4803000" />
       <workItem from="1780141136770" duration="758000" />
       <workItem from="1780227175401" duration="1700000" />
-      <workItem from="1780772549714" duration="4853000" />
+      <workItem from="1780772549714" duration="5021000" />
+      <workItem from="1785671777943" duration="3102000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -442,7 +449,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780776675604</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="CREATE open button">
+      <option name="closed" value="true" />
+      <created>1780777712861</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1780777712861</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,7 +473,6 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="add gamebootstrapper, hero move, camera follow, input services" />
     <MESSAGE value="add initial scene, update game bootstrapper, add scene loader" />
     <MESSAGE value="add logic loading scene and loading resources" />
@@ -483,7 +497,8 @@
     <MESSAGE value="end create ui view" />
     <MESSAGE value="create shop window and add logic in close button" />
     <MESSAGE value="create logic for open ui windiws" />
-    <option name="LAST_COMMIT_MESSAGE" value="create logic for open ui windiws" />
+    <MESSAGE value="CREATE open button" />
+    <option name="LAST_COMMIT_MESSAGE" value="CREATE open button" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
