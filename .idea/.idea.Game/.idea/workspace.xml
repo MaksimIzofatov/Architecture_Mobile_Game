@@ -6,16 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f01b961d-29d9-4c17-bdbf-28649a85c6fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/BootstrapState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/GameStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/GameStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadProgressState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadProgressState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadSceneState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadLevelState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadSceneState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/States/LoadLevelState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Factory/UIFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Services/Factory/UIFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/Windows/ShopWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Windows/ShopWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/Windows/WindowBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/Windows/WindowBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Hud/Shop_button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Hud/Shop_button.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Shop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Shop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Loot" />
+        <entry key="$PROJECT_DIR$" value="UI" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -133,21 +125,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;UI&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.C#&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Ads",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.C#",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Unity\UnityHub\Unity Hub\Hub\2022.3.57f1\Editor\Unity.exe" />
@@ -247,7 +239,7 @@
       <workItem from="1780141136770" duration="758000" />
       <workItem from="1780227175401" duration="1700000" />
       <workItem from="1780772549714" duration="5021000" />
-      <workItem from="1785671777943" duration="3102000" />
+      <workItem from="1785671777943" duration="3760000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -457,7 +449,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780777712861</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="create logic open window, create shop button">
+      <option name="closed" value="true" />
+      <created>1785674971139</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1785674971139</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +473,6 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add gamebootstrapper, hero move, camera follow, input services" />
     <MESSAGE value="add initial scene, update game bootstrapper, add scene loader" />
     <MESSAGE value="add logic loading scene and loading resources" />
     <MESSAGE value="create game factory , assets provider and refactor" />
@@ -498,7 +497,8 @@
     <MESSAGE value="create shop window and add logic in close button" />
     <MESSAGE value="create logic for open ui windiws" />
     <MESSAGE value="CREATE open button" />
-    <option name="LAST_COMMIT_MESSAGE" value="CREATE open button" />
+    <MESSAGE value="create logic open window, create shop button" />
+    <option name="LAST_COMMIT_MESSAGE" value="create logic open window, create shop button" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
